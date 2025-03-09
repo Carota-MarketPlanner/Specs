@@ -1,0 +1,28 @@
+Pod::Spec.new do |s|
+  s.name             = 'CDSComponents'
+  s.version          = '1.0.5'
+  s.summary          = 'Desgin System Components for Carota App'
+
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/Carota-MarketPlanner/ios-cds-components.git'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Elias Ferreira' => 'eliasferreira.pro@gmail.com' }
+  s.source           = { :http => "https://artifactory.carotaapp.com/artifactory/carota-ios-modules/CDSComponents/1.0.5/CDSComponents.zip" }
+
+  s.platforms = { :ios => '15.0'}
+  s.ios.deployment_target = '15.0'
+  
+  s.default_subspecs = "Binary"
+
+  s.subspec 'Binary' do |release|
+    release.vendored_frameworks = 'CDSComponents.xcframework'
+  end
+
+  s.subspec 'Source' do |debug|
+    debug.source_files = 'CDSComponents/Classes/**/*'
+  end
+ 
+end
