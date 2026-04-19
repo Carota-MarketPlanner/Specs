@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Carota-MarketPlanner/ios-carota-service.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Elias Ferreira' => 'eliasferreira.pro@gmail.com' }
-  s.source           = { :http => "https://github.com/Carota-MarketPlanner/ios-carota-service/releases/download/s.version.to_s/CarotaService.zip" }
+  s.source           = { :http => "https://github.com/Carota-MarketPlanner/ios-carota-service/releases/download/1.2.11/CarotaService.zip" }
 
   s.platforms = { :ios => '15.0' }
   s.ios.deployment_target = '15.0'
